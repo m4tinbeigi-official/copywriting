@@ -21,6 +21,11 @@ table {
 
 .social-icon {
     font-size: 1.5em;
-    margin: 0 5px;
+    margin: 0 5px; /* فاصله بین آیکون‌ها */
     color: #007bff;
+    text-decoration: none; /* حذف خط زیر لینک‌ها */
+}
+
+.social-icon:hover {
+    color: #0056b3; /* تغییر رنگ هنگام هاور */
 }
