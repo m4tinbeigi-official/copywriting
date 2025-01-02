@@ -1,6 +1,6 @@
 // ابتدا Supabase را مقداردهی کنید
-const supabaseUrl = 'https://yzvcdwdgjgkvyjpwwouz.supabase.co'; // URL پروژه Supabase
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6dmNkd2RnamdrdnlqcHd3b3V6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU4NDIxNTksImV4cCI6MjA1MTQxODE1OX0.Fkh77XTE4RsY6-q2in-N_AWTxkErJp6krTOlhBssMiw'; // کلید عمومی Supabase
+const supabaseUrl = 'https://zrvxlrizafueghymyenu.supabase.co'; // URL پروژه Supabase
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpydnhscml6YWZ1ZWdoeW15ZW51Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU4NDU0NjQsImV4cCI6MjA1MTQyMTQ2NH0.2mt_G-AOza00weHpyV3Vmwvx8NgA1PulGwfRIhA2t_0'; // کلید عمومی Supabase
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 document.addEventListener('DOMContentLoaded', function () {
