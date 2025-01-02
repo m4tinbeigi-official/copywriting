@@ -1,0 +1,20 @@
+[
+    {
+        "name": "نویسنده اول",
+        "workplace": "شرکت الف",
+        "socialMedia": "https://twitter.com/writer1",
+        "image": "person1.jpg"
+    },
+    {
+        "name": "نویسنده دوم",
+        "workplace": "شرکت ب",
+        "socialMedia": "https://instagram.com/writer2",
+        "image": "person2.jpg"
+    },
+    {
+        "name": "نویسنده سوم",
+        "workplace": "شرکت ج",
+        "socialMedia": "https://linkedin.com/in/writer3",
+        "image": "person3.jpg"
+    }
+]
