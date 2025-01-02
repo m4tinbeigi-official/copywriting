@@ -5,7 +5,11 @@
         "image": "person1.jpg",
         "socialMedia": [
             { "icon": "twitter", "link": "https://twitter.com/writer1" },
-            { "icon": "instagram", "link": "https://instagram.com/writer1" }
+            { "icon": "instagram", "link": "https://instagram.com/writer1" },
+            { "icon": "linkedin", "link": "https://linkedin.com/in/writer2" },
+            { "icon": "telegram", "link": "https://t.me/writer2" },
+            { "icon": "facebook", "link": "https://facebook.com/writer3" },
+            { "icon": "youtube", "link": "https://youtube.com/writer3" }
         ]
     },
     {
