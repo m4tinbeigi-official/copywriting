@@ -1,5 +1,6 @@
 body {
     font-family: 'Vazirmatn', sans-serif;
+    padding-bottom: 100px; /* برای جلوگیری از همپوشانی فوتر با محتوا */
 }
 
 header {
@@ -8,13 +9,18 @@ header {
 
 footer {
     background-color: #343a40 !important;
-}
-
-.card {
-    margin-bottom: 20px;
-}
-
-.card img {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    height: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    margin: 0 5px;
+    color: #007bff;
 }
