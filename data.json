@@ -1,20 +1,29 @@
 [
     {
-        "name": "علی کاشی",
-        "workplace": "دلینو",
-        "socialMedia": "https://twitter.com/alikashi93",
-        "image": "person1.jpg"
+        "name": "نویسنده اول",
+        "workplace": "شرکت الف",
+        "image": "person1.jpg",
+        "socialMedia": [
+            { "icon": "twitter", "link": "https://twitter.com/writer1" },
+            { "icon": "instagram", "link": "https://instagram.com/writer1" }
+        ]
     },
     {
         "name": "نویسنده دوم",
         "workplace": "شرکت ب",
-        "socialMedia": "https://instagram.com/writer2",
-        "image": "person2.jpg"
+        "image": "person2.jpg",
+        "socialMedia": [
+            { "icon": "linkedin", "link": "https://linkedin.com/in/writer2" },
+            { "icon": "telegram", "link": "https://t.me/writer2" }
+        ]
     },
     {
         "name": "نویسنده سوم",
         "workplace": "شرکت ج",
-        "socialMedia": "https://linkedin.com/in/writer3",
-        "image": "person3.jpg"
+        "image": "person3.jpg",
+        "socialMedia": [
+            { "icon": "facebook", "link": "https://facebook.com/writer3" },
+            { "icon": "youtube", "link": "https://youtube.com/writer3" }
+        ]
     }
 ]
