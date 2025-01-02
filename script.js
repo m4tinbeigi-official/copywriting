@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <a href="${social.link}" target="_blank">
                                 <i class="fab fa-${social.icon} social-icon"></i>
                             </a>
-                        `).join('')}
+                        `).join(' ')} <!-- فقط فاصله به عنوان جداکننده -->
                     </td>
                 </tr>
             `;
