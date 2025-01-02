@@ -1,23 +1,44 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('searchInput');
+    const copywritersList = document.getElementById('copywriters-list');
+
+    // بارگذاری داده‌ها از فایل JSON
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            const listContainer = document.getElementById('copywriters-list');
-            data.forEach(person => {
-                const card = `
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="images/${person.image}" class="card-img-top" alt="${person.name}">
-                            <div class="card-body">
-                                <h5 class="card-title">${person.name}</h5>
-                                <p class="card-text">محل کار: ${person.workplace}</p>
-                                <a href="${person.socialMedia}" class="btn btn-primary" target="_blank">آیدی سوشال مدیا</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                listContainer.innerHTML += card;
+            displayCopywriters(data);
+
+            // افزودن قابلیت جستجو
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+                const filteredData = data.filter(person =>
+                    person.name.toLowerCase().includes(searchTerm) ||
+                    person.workplace.toLowerCase().includes(searchTerm)
+                );
+                displayCopywriters(filteredData);
             });
         })
         .catch(error => console.error('Error loading the data:', error));
+
+    // تابع برای نمایش داده‌ها در جدول
+    function displayCopywriters(data) {
+        copywritersList.innerHTML = '';
+        data.forEach(person => {
+            const row = `
+                <tr>
+                    <td><img src="images/${person.image}" alt="${person.name}" class="img-thumbnail" width="100"></td>
+                    <td>${person.name}</td>
+                    <td>${person.workplace}</td>
+                    <td>
+                        ${person.socialMedia.map(social => `
+                            <a href="${social.link}" target="_blank">
+                                <i class="fab fa-${social.icon} social-icon"></i>
+                            </a>
+                        `).join('')}
+                    </td>
+                </tr>
+            `;
+            copywritersList.innerHTML += row;
+        });
+    }
 });
